@@ -1,0 +1,70 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.ai
+*.psd
+*.suo
+desktop.ini
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.pdb
+*.rar
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+*.orig
+
+# OS generated files #
+######################
+obj/
+bin/
+temp/
+dist/
+assets/
+node_modules/
+app/node_modules/
+# packages/
+.idea/
+
+# Ignore static version files
+######################
+
+
+# Others
+######################
+.project
+.settings
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# NuGet files
+*.nupkg
+
+# NCrunch files
+*.ncrunchsolution
+*.ncrunchproject
+*_NCrunch_*/

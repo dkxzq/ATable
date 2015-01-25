@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>index</title>
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery-1.10.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/AlanTable.js"></script>
+    <link href="/CSS/ATable-0.1.1.custom.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="showOrderSubTable" data-title="OrderDetail" data-limit="10" data-showcheck="false"></div>
+    <script>
+        var atable = $("#showOrderSubTable").TransAlanTable("/Data/getData.ashx", "modelName=V_WXShpSubOrder", "Parent='" + mainId + "'",
+                        [
+                            new AHidColumn("ID", "编号", "ID"),
+                            new AHidColumn("Parent", "OrderID", "ParentOrder"),
+                            new AHidColumn("ProductId", "产品编号"),
+                            new ALblColumn("ProductName", "产品名称"),
+                            new ALblColumn("ProductModel", "产品型号"),
+                            new ALblColumn("Price", "价格"),
+                            new ALblColumn("Number", "订购数"),
+                            new ALblColumn("DeliveryNum", "已发货"),
+                        ]);
+    </script>
+</body>
+</html>
